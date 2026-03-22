@@ -13,12 +13,12 @@
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 50px;
       color: #38bdf8;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       color: #cbd5f5;
     }
 
@@ -26,9 +26,11 @@
       background-color: #38bdf8;
       color: black;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 10px;
       cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -40,18 +42,18 @@
 
 <body>
 
-  <h1>O que sei fazer?</h1>
+  <h1>GUIZIN</h1>
+  <p>O que sei fazer?</p>
 
+  <button onclick="mostrar()">Clica aqui para saber</button>
 
-<button onclick="mudarTexto()">clique aqui para saber a resposta</button>
+  <p id="resposta"></p>
 
-<script>
-  function mudarTexto() {
-    document.getElementById("titulo").innerText = "Só sei que nada sei 🔥🔥🔥🔥🔥";
-  }
-</script>
+  <script>
+    function mostrar() {
+      document.getElementById("resposta").innerText = "Só sei que nada sei";
+    }
+  </script>
 
-  
 </body>
 </html>
-
