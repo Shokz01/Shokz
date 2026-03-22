@@ -44,14 +44,18 @@
   <p>Clique para saber mais</p>
 
   <button>Clica aqui</button>
+
+  <h1 id="titulo">Meu site</h1>
+
+<button onclick="mudarTexto()">Mudar texto</button>
+
+<script>
+  function mudarTexto() {
+    document.getElementById("titulo").innerText = "Mudou 😎";
+  }
+</script>
+
   
 </body>
 </html>
 
-<button onclick="clicou()">Clica aqui</button>
-
-<script>
-  function clicou() {
-    alert("Você clicou no botão 😎");
-  }
-</script>
